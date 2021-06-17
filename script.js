@@ -22,3 +22,14 @@ document.getElementById("rodyti1").addEventListener("click", function() {
 document.getElementById("rezultatas1").innerHTML = Math.max(skaicius2, skaicius3, skaicius4);
 } )
 
+document.getElementById("rodyti2").addEventListener("click", function() {
+    let skaicius5 = document.getElementById("skaicius5").value;
+    let skaicius6 = document.getElementById("skaicius6").value;
+    let skaicius7 = document.getElementById("skaicius7").value;
+
+    if (skaicius5 + skaicius6 > skaicius7 && skaicius5 + skaicius7 > skaicius6 && skaicius6 + skaicius7 > skaicius5) {
+    document.getElementById("rezultatas2").innerHTML = "Trikampis " + " gaunasi"; 
+     } else { document.getElementById("rezultatas2").innerHTML = "Trikampis " + " nesigauna";
+    }
+    
+} )
